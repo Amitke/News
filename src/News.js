@@ -12,7 +12,7 @@ const News = () => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setFetchData(data.articles))
-      .catch(() => console.log("Something Wen wrong"));
+      .catch(() => console.log("Something Went wrong"));
   }, []);
 
   const handleBookMark = (e)=>{
