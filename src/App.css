@@ -1,0 +1,88 @@
+.container {
+  max-width: 95%;
+  margin-left:auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+img{
+  max-width: 100%;
+}
+a{
+  color: #f43f3f;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.header a:hover{
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+.header{
+  background-color: #000;
+  padding: 10px 15px;
+}
+.loading {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #000;
+  border-radius: 50%;
+  border-top: 16px solid #f43f3f;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+h1{
+  color: #f43f3f;
+}
+.news{
+  padding: 15px;
+}
+.news .row{
+  display: flex;
+  flex-direction: row;
+  margin: 10px -15px;
+  box-shadow: 0px -4px 8px rgb(0 0 0 / 5%), 0px 4px 8px rgb(0 0 0 / 10%);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px 0;
+}
+.news .row a{
+  color: #000;
+}
+.news .row a:hover{
+  color: #f43f3f;
+}
+.news .row .image-section{
+  width: 30%;
+  padding: 0 15px;
+}
+.news .row .news--details-section{
+  width: 70%;
+  padding: 0 15px;
+}
+.news .row .news--details-section h2,
+.news .row .news--details-section p{
+  margin-bottom: 5px;
+}
+.news .row .news--details-section .author-date{
+  display: flex;
+}
+.news .row .news--details-section .author-date h5{
+  margin-right: 10px;
+  font-weight: 400;
+  margin-top: 20px;
+}
